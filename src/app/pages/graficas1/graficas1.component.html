@@ -1,3 +1,53 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{graficos.grafico1.leyenda}}</h4>
+        <app-grafico-dona
+          [ChartLabels]="graficos.grafico1.labels"
+          [MultiDataSet]="graficos.grafico1.data"
+        >
+        </app-grafico-dona>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.grafico2.leyenda}}</h4>
+        <app-grafico-dona
+          [ChartLabels]="graficos.grafico2.labels"
+          [MultiDataSet]="graficos.grafico2.data"
+        >
+        </app-grafico-dona>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.grafico3.leyenda}}</h4>
+        <app-grafico-dona
+          [ChartLabels]="graficos.grafico3.labels"
+          [MultiDataSet]="graficos.grafico3.data"
+        >
+        </app-grafico-dona>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-sm-12 col-md-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.grafico4.leyenda}}</h4>
+        <app-grafico-dona
+          [ChartLabels]="graficos.grafico4.labels"
+          [MultiDataSet]="graficos.grafico4.data"
+        >
+        </app-grafico-dona>
+      </div>
+    </div>
+  </div>
+</div>
